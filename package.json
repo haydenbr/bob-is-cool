@@ -8,7 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "serve": "ng serve --host 0.0.0.0 --port 4200"
+    "serve": "ng serve --host 0.0.0.0 --port 4200",
+    "start": "docker container run -it -p 4200:4200 -v $(pwd)/src:/opt/app/src haydenbr/bob-is-cool"
   },
   "private": true,
   "dependencies": {
